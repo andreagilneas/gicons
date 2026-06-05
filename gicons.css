@@ -1,22 +1,19 @@
 @font-face {
 	font-family: "game-icons";
-	src: url('https://github.com/andreagilneas/gicons/blob/main/game-icons.eot');
-	src: url('https://github.com/andreagilneas/gicons/blob/main/game-icons.eot?#iefix') format('eot'),
-		url('https://github.com/andreagilneas/gicons/blob/main/game-icons.woff') format('woff'),
-		url('https://github.com/andreagilneas/gicons/blob/main/game-icons.ttf') format('truetype'),
-		url('./game-icons.svg#game-icons') format('svg');
+	src: url("./game-icons.eot?#iefix") format("embedded-opentype"),
+url("./game-icons.woff") format("woff"),
+url("./game-icons.ttf") format("truetype");
+}
+
+.game-icon {
+	line-height: 1;
 }
 
 .game-icon:before {
-	font-family: "game-icons";
-		-webkit-font-smoothing: antialiased;
-		-moz-osx-font-smoothing: grayscale;
+	font-family: game-icons !important;
 	font-style: normal;
-	font-variant: normal;
-	font-weight: normal;
-	/* speak: none; only necessary if not using the private unicode range (firstGlyph option) */
-	text-decoration: none;
-	text-transform: none;
+	font-weight: normal !important;
+	vertical-align: top;
 }
 
 
